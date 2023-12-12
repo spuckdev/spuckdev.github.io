@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+:root {
+  --neon-purple: rgb(231, 220, 69);
+  --red-purple: rgb(231, 220, 69);
+  --roboto: 'Roboto', sans-serif;
+  --rubik: 'Rubik', sans-serif;
+  --bg-color: #8b8b8b;
+  --text-color: #ffffff;
+  --bg-accordeon: #fbf9eb;
+
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  font-family: var(--rubik) !important;
+}
+
+/* HEADDER */
+.header-effect {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+  font-size: 17px;
+}
+
+.header-effect:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 85%;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, .8, .13, 1);
+  background-color: var(--red-purple);
+  color: var(--bg-color) !important;
+}
+
+.header-effect:hover:after {
+  top: 0%;
+
+}
+
+/* HEADDER */
+
+/* MAIN */
+.pop-efect {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+}
+
+.pop-efect:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 60%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, .8, .13, 1);
+  background-color: var(--red-purple);
+}
+
+.pop-efect:hover:after {
+  top: 0%;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.btn {
+  border-color: var(--red-purple);
+}
+
+.pop {
+  color: var(--red-purple);
+}
+
+.main_img {
+  border-radius: 50%;
+  width: 70%;
+}
+
+.icon {
+  width: 40px;
+}
+
+/* MAIN */
+
+
+/* SKILLS */
+.skill-list {
+  list-style: none;
+  font-size: 18px;
+}
+
+
+.text-effect {
+  text-decoration: none;
+  color: var(--text-color);
+  position: relative;
+
+}
+
+
+.text-effect:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 85%;
+  left: -0.5em;
+  right: -0.5em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, .8, .13, 1);
+  background-color: var(--red-purple);
+  color: var(--bg-color) !important;
+}
+
+.bg {
+  background-color: rgb(223, 243, 110), 220, 69;
+}
+
+.text-effect:hover:after {
+  top: 0%;
+
+}
+
+/* SKILLS */
+
+/* EXPERIENCIA */
+/* EXPERIENCIA */
+
+/* PROJETOS */
+.lang-size {
+  font-size: 17px;
+}
+
+.card-link-effect {
+  color: var(--red-purple);
+
+}
+
+
+
+.card-effect:hover {
+  transform: scale(1.01);
+}
+
+.card-link-effect:hover {
+  font-weight: 600;
+
+}
+
+.card-header {
+  background-color: white !important;
+  border-bottom: white !important;
+}
+
+/* PROJETOS */
+
+/* Accordeon */
+.acord {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.acord:hover {
+  transform: scale(1.02);
+
+}
+
+.accordion-button-effect {
+  background-color: white !important;
+  font-size: 1.3rem;
+
+}
+
+.accordion-button-effect:focus {
+  box-shadow: none;
+
+}
+
+/*Accordeon */
+
+
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.linha {
+  width: 100px;
+  border: 3px solid var(--red-purple);
+  margin: auto;
+}
+
+
+details {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--red-purple);
+  border-left: 15px solid gray;
+  padding: 15px;
+  margin-top: 15px;
+
+}
+/**/
+.warning {
+  background: var(--bg-accordeon);
+  border-left-color: var(--red-purple);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+}
+
+.sumario .pnovo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-start;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: var(--text-color);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sumario::before {
+  cursor: pointer;
+  position: absolute;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  left: 0rem;
+  margin-right: .5rem;
+}
